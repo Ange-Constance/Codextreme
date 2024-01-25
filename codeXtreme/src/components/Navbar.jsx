@@ -19,7 +19,7 @@ const Navbar = () => {
           <li><a href="#" className="text-black">Sign In</a></li>
         </ul>
 
-        <button className="bg-black text-white py-2 px-4 rounded-md ml-4">
+        <button className="bg-primary text-white py-2 px-4 rounded-lg ml-4 font-bold">
           Get Started
         </button>
       </div>
