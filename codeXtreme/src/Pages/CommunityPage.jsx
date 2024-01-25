@@ -1,4 +1,5 @@
 import ProjectCard from "../Components/ProjectCard"
+import TrendingCard from "../components/TrendingCard"
 import Navbar from "../components/Navbar";
 function CommunityPage() {
 
@@ -42,12 +43,23 @@ function CommunityPage() {
  
   ];
 
+
   return (
-    <div className="justify-center items-center h-screen items-center">
+    <div>
       <Navbar />
+    <div className="flex ml-40 mr-40">    
+     
+    <div className="justify-center h-screen items-center flex-initial w-4/5">
     {projects.map((project) => (
       <ProjectCard key={project.id} {...project} />
     ))}
+
+    </div>
+    <div className="flex-initial w-2/5">
+    <TrendingCard />   
+    </div>
+
+  </div>
   </div>
   )
 }
