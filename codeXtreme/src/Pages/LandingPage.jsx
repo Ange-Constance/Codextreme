@@ -1,7 +1,7 @@
-
+import Navbar from "../components/Navbar"
 function LandingPage() {
   return (
-    <div className="text-2xl text-cyan-600">LandingPage!!!!</div>
+    <Navbar />
   )
 }
 
