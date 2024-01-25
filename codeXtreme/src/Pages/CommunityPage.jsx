@@ -1,5 +1,5 @@
 import ProjectCard from "../Components/ProjectCard"
-
+import Navbar from "../components/Navbar";
 function CommunityPage() {
 
   const projects = [
@@ -44,6 +44,7 @@ function CommunityPage() {
 
   return (
     <div className="justify-center items-center h-screen items-center">
+      <Navbar />
     {projects.map((project) => (
       <ProjectCard key={project.id} {...project} />
     ))}
