@@ -1,6 +1,6 @@
 import ProjectCard from "../Components/ProjectCard"
 import TrendingCard from "../components/TrendingCard"
-import Navbar from "../components/Navbar";
+import Nav from "../components/Nav";
 function CommunityPage() {
 
   const projects = [
@@ -46,7 +46,7 @@ function CommunityPage() {
 
   return (
     <div>
-      <Navbar />
+      <Nav />
     <div className="flex ml-40 mr-40">    
      
     <div className="justify-center h-screen items-center flex-initial w-4/5">

@@ -31,12 +31,12 @@ const TrendingCard = () => {
   ];
 
   const recommendedFields = [
-    'Machine Learning',
-    'Web Development',
-    'Data Science',
-    'Mobile Apps',
-    'Cybersecurity',
-    'Agriculture',
+    '#Machine Learning',
+    '#Web Development',
+    '#Data Science',
+    '#Mobile Apps',
+    '#Cybersecurity',
+    '#Agriculture',
     // Add more fields as needed
   ];
 
