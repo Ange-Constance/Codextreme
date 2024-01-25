@@ -15,17 +15,17 @@ const ProjectCard = ({ user, projectImage, title, description, date, comments })
   };
 
   return (
-    <div className="border p-4 pl-8 rounded-md shadow-md w-2/3 mb-4 m-16">
+    <div className="border-t p-2 pl-8 rounded-md shadow-sm bg-white mb-6">
       {/* User Information */}
       <div className="flex items-center mb-2">
         <img
-          src={user.profilePicture} // Use user's profile picture URL from props
+          src={user.profilePicture}
           alt="User Profile"
           className="w-8 h-8 rounded-full mr-2"
         />
         <div>
-          <p className="text-sm font-semibold text-xl">{user.name}</p>
-          <p className="text-xs text-gray-500 text-xl">{date}</p>
+          <p className="text-sm font-bold text-md">{user.name}</p>
+          <p className="text-xs text-gray-500 text-md">{date}</p>
         </div>
       </div>
 
@@ -34,7 +34,7 @@ const ProjectCard = ({ user, projectImage, title, description, date, comments })
         {/* Project Image */}
         <div className="flex-shrink-0">
           <img
-            src={projectImage} // Use project image URL from props
+            src={projectImage}
             alt="Project Image"
             className="w-20 h-20 object-cover rounded-md"
           />
@@ -42,8 +42,8 @@ const ProjectCard = ({ user, projectImage, title, description, date, comments })
 
         {/* Project Description */}
         <div className="ml-4 flex-grow">
-          <h2 className="text-lg font-bold text-4xl">{title}</h2>
-          <p className="text-gray-600 mt-1 text-xl">{description}</p>
+          <h2 className="text-lg font-bold text-2xl">{title}</h2>
+          <p className="text-gray-600 mt-1 text-md">{description}</p>
         </div>
       </div>
 
@@ -51,12 +51,12 @@ const ProjectCard = ({ user, projectImage, title, description, date, comments })
       <div className="flex items-center mt-4">
         {/* Rating Section */}
         <div className="flex-grow">
-          <p className="text-md text-gray-500 mb-2 ">Rate this project:</p>
+          <p className="text-sm text-gray-500 mb-2 font-bold">Rate this project:</p>
           <div className="flex">
             {[1, 2, 3, 4, 5].map((index) => (
               <FaStar
                 key={index}
-                className={index <= rating ? 'text-yellow-500 cursor-pointer' : 'text-gray-300 cursor-pointer'}
+                className={index <= rating ? 'text-primary cursor-pointer' : 'text-gray-300 cursor-pointer'}
                 onClick={() => handleStarClick(index)}
               />
             ))}
@@ -65,7 +65,7 @@ const ProjectCard = ({ user, projectImage, title, description, date, comments })
 
         {/* Show Comments Button */}
         <div className="ml-auto">
-          <button onClick={handleToggleComments} className="text-blue-500 hover:underline focus:outline-none">
+          <button onClick={handleToggleComments} className="bg-primary hover:bg-secondary text-white font-bold py-2 px-4 rounded">
             {showComments ? 'Hide Comments' : 'Show Comments'}
           </button>
         </div>
@@ -79,8 +79,8 @@ const ProjectCard = ({ user, projectImage, title, description, date, comments })
               {comment}
             </p>
           ))}
-           <input type="text" placeholder="comment" className="w-full p-2 border rounded-md"/>
-        </div>       
+          <input type="text" placeholder="Add a comment" className="w-full p-2 border rounded-md"/>
+        </div>
       )}
     </div>
   );
