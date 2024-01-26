@@ -15,7 +15,7 @@ const Nav = () => {
   };
 
   return (
-    <nav className="bg-white p-4 flex items-center justify-between fixed w-full top-0 z-10">
+    <nav className="bg-white p-4 flex items-center justify-between fixed w-full top-0 z-10 font-primary">
       {/* Left side - Logo and Name */}
       <div className="flex items-center">
       <img src={Logo} alt="Logo" className="w-[170px] h-[40px] ml-12 mb-8" />
@@ -33,6 +33,9 @@ const Nav = () => {
         <ul className="flex space-x-4 ">
           <Link to="/community">
             <li><a href="#" className="text-black">Community</a></li>
+          </Link>
+          <Link to="/myprojects">
+            <li><a href="#" className="text-black"></a>My Projects</li>
           </Link>
 
           <Link to="/projects">

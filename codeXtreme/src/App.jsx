@@ -12,6 +12,7 @@ import ProjectsPage from "./Pages/ProjectsPage"
 import PreferencesPage from "./Pages/PreferencesPage"
 import ProjectForm from "./Pages/ProjectForm"
 import ProjectDescription from "./Pages/ProjectDescription"
+import MyProjectsPage from "./Pages/MyProjectsPage"
 
 
 const App = () => {
@@ -30,6 +31,7 @@ const App = () => {
           <Route path="/projectpage" element={<ProjectsPage />} />
           <Route path="/projectform" element={<ProjectForm/>} />
           <Route path="/projectdescription" element={<ProjectDescription/>} />
+          <Route path="/myprojects" element={<MyProjectsPage/>} />
         </Routes>
       </Router>
    

@@ -3,7 +3,7 @@ import Logo from '../assets/Finvest_Logo.png'
 import { Link } from 'react-router-dom';
 const Navbar = () => {
   return (
-    <nav className="bg-white p-4 flex items-center justify-between mt-2">
+    <nav className="bg-white p-4 flex items-center justify-between mt-2 font-primary">
       {/* Left side - Logo and Name */}
       <div className="flex items-center">
         <img src={Logo} alt="Logo" className="w-[170px] h-[40px] ml-12 mb-8" />

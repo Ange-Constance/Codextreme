@@ -1,10 +1,9 @@
-// src/components/BestProjectsPage.js
 import Image from "../assets/vr-lenses.png";
 import React, { useState } from 'react';
 import Nav from "../components/Nav";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTrophy } from '@fortawesome/free-solid-svg-icons';
-// import Navbar from "../Components/Nav.jsx";
+import { FaEdit, FaTrash } from 'react-icons/fa';
+import { Link } from "react-router-dom";
+
 const projectsData = [
   {
     id: 1,
@@ -26,75 +25,30 @@ const projectsData = [
     link: 'https://example.com/project2',
     investors: 15,
   },
-  {
-    id: 3,
-    image: {Image},
-    title: 'Project 3',
-    date: 'February 15, 2022',
-    ratings: 4.2,
-    description: 'An innovative solution to solve...',
-    link: 'https://example.com/project2',
-    investors: 15,
-  },
-  {
-    id: 4,
-    image: {Image},
-    title: 'Project 4',
-    date: 'February 15, 2022',
-    ratings: 4.2,
-    description: 'An innovative solution to solve...',
-    link: 'https://example.com/project2',
-    investors: 15,
-  },
-  {
-    id: 5,
-    image: {Image},
-    title: 'Project 5',
-    date: 'February 15, 2022',
-    ratings: 4.2,
-    description: 'An innovative solution to solve...',
-    link: 'https://example.com/project2',
-    investors: 15,
-  },
-  {
-    id: 6,
-    image: {Image},
-    title: 'Project 6',
-    date: 'February 15, 2022',
-    ratings: 4.2,
-    description: 'An innovative solution to solve...',
-    link: 'https://example.com/project2',
-    investors: 15,
-  },
-  // Add more project data as needed
+  
+
+ 
 ];
 
-const ProjectsPage = () => {
-
+const MyProjectsPage = () => {
   
-   
-  
-  // Calculate the number of columns based on the projectsData length
   const numRows = Math.ceil(projectsData.length / 3);
-
-
   
   return (
     <div className="font-primary">
     <Nav />
-    <div className="p-8 mt-28 ">
-      {/* Title and Search Bar */}
+    <div className="p-8 mt-32">
+    
       <div className="flex justify-between items-center mb-8">
-        {/* Golden Cup Icon */}
+       
        <div className="flex flex-row">
-       <h1 className="text-3xl font-bold ml-12">Top Student Projects</h1>
-        <FontAwesomeIcon icon={faTrophy} className="text-yellow-500 text-3xl mt-1 px-4 " />
+       <h1 className="text-3xl font-bold ml-12">My projects</h1>        
        </div>
         
         <div className="flex items-center space-x-4">
-          {/* Create New Project Button */}
+         
           <button className="bg-primary text-white px-4 py-2 rounded-md mr-12 ">
-            Add a New Project
+            + Add a New Project
           </button>
       
         </div>
@@ -112,9 +66,28 @@ const ProjectsPage = () => {
               <img
                   src={Image}
                   alt={project.title}
-                  className="w-full h-34 object-cover mb-4 rounded-md"
+                  className="w-full h-30 object-cover mb-4 rounded-md"
                 />
-                <h2 className="text-xl font-bold mb-2">{project.title}</h2>
+
+          <div className="grid grid-cols-2 gap-48">
+            <div className="">
+            <h2 className="text-xl font-bold mb-2">{project.title}</h2>
+            </div>
+
+            <div className="grid grid-cols-4 ml-6 gap-6 ">
+              <div >
+                <Link to="/">
+                 <FaEdit className="text-2xl text-primary" />
+               </Link>
+            </div>
+            <div >
+              <Link to="/">
+            <FaTrash className="text-2xl text-red-800" />
+            </Link>
+            </div>
+            </div>
+          </div>
+
                 <p className="text-sm text-gray-500 mb-2">{project.date}</p>
                 <div className="flex items-center mb-2">
                   <span className="text-yellow-500 mr-1">&#9733;</span>
@@ -123,6 +96,9 @@ const ProjectsPage = () => {
                 <p className="text-sm text-gray-700 mb-4">
                   {project.description}
                 </p>
+
+                <div className="flex">
+                  <div className="p-2">
                 <a
                   href={project.link}
                   className="text-blue-500 hover:underline mb-2"
@@ -132,6 +108,16 @@ const ProjectsPage = () => {
                 <p className="text-sm text-gray-500">
                   Investors: {project.investors}
                 </p>
+                </div>
+
+                <div className="pt-2 pl-24">
+                <button className="bg-primary text-white px-4 py-2 rounded-md ">
+                 Auction Your Project
+                </button>
+                </div>
+                </div>
+
+
               </div>
             </div>
           ))}
@@ -142,4 +128,4 @@ const ProjectsPage = () => {
   );
 };
 
-export default ProjectsPage;
+export default MyProjectsPage;

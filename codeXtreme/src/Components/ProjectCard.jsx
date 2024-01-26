@@ -15,7 +15,7 @@ const ProjectCard = ({ user, projectImage, title, description, date, comments })
   };
 
   return (
-    <div className="border-t p-2 pl-8 rounded-md shadow-sm bg-white mb-6">
+    <div className="border-t p-2 pl-8 rounded-md shadow-sm bg-white mb-6 font-primary">
       {/* User Information */}
       <div className="flex items-center mb-2">
         <img

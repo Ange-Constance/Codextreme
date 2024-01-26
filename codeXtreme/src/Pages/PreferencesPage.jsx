@@ -96,7 +96,7 @@ const PreferencesPage = () => {
   };
 
   return (
-    <div>
+    <div className='font-primary'>
       <Nav />
       <div className="max-w-3xl mx-auto p-8 mt-24">
 

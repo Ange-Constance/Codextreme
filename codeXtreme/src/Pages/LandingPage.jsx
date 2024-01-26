@@ -47,7 +47,7 @@ function LandingPage() {
   ];
   
   return (
-    <div>
+    <div className="font-primary">
     <Navbar />
     <div className="flex-grow p-8">
       {/* Left side content */}
