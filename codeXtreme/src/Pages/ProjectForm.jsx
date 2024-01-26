@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import Nav from "../Components/Nav";
 const ProjectForm = () => {
   const [formData, setFormData] = useState({
     projectName: '',
@@ -54,7 +54,10 @@ const ProjectForm = () => {
   );
 
   return (
-    <div className="max-w-xl mx-auto p-8 bg-white rounded-md shadow-md mt-4">
+    <div>
+      <Nav/>
+    <div className='mt-[100px]'>
+    <div className="max-w-xl mx-auto p-8 bg-white rounded-md shadow-md ">
       {currentStep === 1 && (
         <div>
           <h2 className="text-2xl font-bold mb-4">Step 1: Project Details</h2>
@@ -94,14 +97,14 @@ const ProjectForm = () => {
             />
           </label>
 
-          <button onClick={nextStep} className="bg-blue-500 text-white px-4 py-2 rounded-md">
+          <button onClick={nextStep} className="bg-primary text-white px-4 py-2 rounded-md">
             Next {renderIcon()}
           </button>
         </div>
       )}
 
       {currentStep === 2 && (
-        <div>
+        <div >
           <h2 className="text-2xl font-bold mb-4">Step 2: Project Dates</h2>
           {/* Render form fields for Step 2 */}
           <label className="block mb-4">
@@ -131,7 +134,7 @@ const ProjectForm = () => {
           <button onClick={prevStep} className="mr-4 bg-gray-500 text-white px-4 py-2 rounded-md">
             Previous
           </button>
-          <button onClick={nextStep} className="bg-blue-500 text-white px-4 py-2 rounded-md">
+          <button onClick={nextStep} className="bg-primary text-white px-4 py-2 rounded-md">
             Next {renderIcon()}
           </button>
         </div>
@@ -164,6 +167,9 @@ const ProjectForm = () => {
         </div>
       )}
     </div>
+    </div>
+    </div>
+   
   );
 };
 
