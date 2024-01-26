@@ -8,6 +8,10 @@ export default {
         secondary: '#1aed89',
         tertiary: '#1e1e1e',
       },
+      visibility: {
+        visible: 'visible',
+        hidden: 'hidden',
+      },
     },
   },
   plugins: [],

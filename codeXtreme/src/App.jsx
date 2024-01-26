@@ -10,6 +10,8 @@ import SignUp from "./components/SignUp"
 import OurStoryPage from "./Pages/OurStoryPage"
 import ProjectsPage from "./Pages/ProjectsPage"
 import PreferencesPage from "./Pages/PreferencesPage"
+import ProjectForm from "./Pages/ProjectForm"
+import ProjectDescription from "./Pages/ProjectDescription"
 
 
 const App = () => {
@@ -25,6 +27,9 @@ const App = () => {
           <Route path="/signin" element={<SingIn />} />
           <Route path="/singup" element={<SignUp />} />
           <Route path="/preferences" element={<PreferencesPage />} />
+          <Route path="/projectpage" element={<ProjectsPage />} />
+          <Route path="/projectform" element={<ProjectForm/>} />
+          <Route path="/projectdescription" element={<ProjectDescription/>} />
         </Routes>
       </Router>
    
