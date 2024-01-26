@@ -13,6 +13,9 @@ export default {
         visible: 'visible',
         hidden: 'hidden',
       },
+      fontFamily:{
+        'primary': ['athletics']
+      }
     },
   },
   plugins: [],

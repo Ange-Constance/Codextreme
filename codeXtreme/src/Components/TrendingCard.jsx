@@ -41,7 +41,7 @@ const TrendingCard = () => {
   ];
 
   return (
-    <div className="mx-2 my-4 p-6 bg-white rounded-md shadow-md overflow-hidden">
+    <div className="mx-2 my-4 p-6 bg-white rounded-md shadow-md overflow-hidden font-primary">
       {/* Section 1: Trending Projects */}
       <div className="p-4 border-l border-b">
         <h2 className="text-lg font-bold mb-2">Trending Projects</h2>

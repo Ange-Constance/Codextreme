@@ -45,7 +45,7 @@ function CommunityPage() {
 
 
   return (
-    <div>
+    <div className="font-primary">
       <Nav />
     <div className="flex ml-40 mr-40 mt-32">    
      

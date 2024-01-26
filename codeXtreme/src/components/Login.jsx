@@ -2,7 +2,7 @@ import Logo from "../assets/Finvest-White.png"
 import Image from "../assets/main_pic.svg"
 const Login = () => {
   return (
-    <div className="min-h-screen flex items-center w-full  bg-primary ">
+    <div className="min-h-screen flex items-center w-full  bg-primary font-primary ">
     <form className="w-full max-w-md p-6 bg-white rounded-md shadow-md ml-16">
       <h2 className="text-2xl font-bold mb-6">Log In</h2>
 

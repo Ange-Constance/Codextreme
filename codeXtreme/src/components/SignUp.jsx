@@ -3,7 +3,7 @@ import Image from "../assets/main_pic.svg"
 const SignUp = () => {
   return (
   
-    <div className="min-h-screen flex items-center w-full  bg-primary ">
+    <div className="min-h-screen flex items-center w-full  bg-primary font-primary">
       {/* <div>
         logo and name
       </div> */}

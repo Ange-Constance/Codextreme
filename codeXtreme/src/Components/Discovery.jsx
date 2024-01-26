@@ -31,7 +31,7 @@ const Discovery = () => {
   return (
 
 
-    <div className="flex-grow p-8 absolute right-20 mt-[120px] ">
+    <div className="flex-grow p-8 absolute right-20 mt-[120px] font-primary">
     
       <div className="items-center text-center">
         <h2 className="text-lg font-bold mb-2">Recommended Fields</h2>
