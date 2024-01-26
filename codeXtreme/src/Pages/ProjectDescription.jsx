@@ -1,5 +1,5 @@
 import projectImage from '../assets/vr-lenses.png';
-import Nav from '../components/Nav';
+import Nav from '../Components/Nav';
 import React, { useState } from 'react';
 
 const ProjectDescription = () => {

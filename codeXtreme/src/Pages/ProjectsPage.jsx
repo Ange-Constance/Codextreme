@@ -1,9 +1,10 @@
 // src/components/BestProjectsPage.js
 import Image from "../assets/vr-lenses.png";
 import React, { useState } from 'react';
-import Nav from "../components/Nav";
+import Nav from "../Components/Nav";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTrophy } from '@fortawesome/free-solid-svg-icons';
+import { Link } from "react-router-dom";
 // import Navbar from "../Components/Nav.jsx";
 const projectsData = [
   {
@@ -94,7 +95,9 @@ const ProjectsPage = () => {
         <div className="flex items-center space-x-4">
           {/* Create New Project Button */}
           <button className="bg-primary text-white px-4 py-2 rounded-md mr-12 ">
+            <Link to="/projectform">
             Add a New Project
+            </Link>
           </button>
       
         </div>
