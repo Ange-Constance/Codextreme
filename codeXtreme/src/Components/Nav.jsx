@@ -5,7 +5,7 @@ import Logo from '../assets/Finvest_Logo.png';
 const Nav = () => {
   const user = {
     name: 'John Doe',
-    UserProfilePicture: 'https://placekitten.com/30/30',
+    UserProfilePicture: 'https://plus.unsplash.com/premium_photo-1690579805307-7ec030c75543?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDF8fHByb2ZpbGV8ZW58MHwwfDB8fHww',
   };
 
   const [showDropdown, setShowDropdown] = useState(false);
@@ -16,10 +16,11 @@ const Nav = () => {
 
   return (
     <nav className="bg-white p-4 flex items-center justify-between fixed w-full top-0 z-10 font-primary">
-      {/* Left side - Logo and Name */}
+      <Link to="/">
       <div className="flex items-center">
       <img src={Logo} alt="Logo" className="w-[170px] h-[40px] ml-12 mb-8" />
       </div>
+        </Link>
 
       {/* Right side - Navigation and Profile */}
       <div className="flex items-center space-x-4">

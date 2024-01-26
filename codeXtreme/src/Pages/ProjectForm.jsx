@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import Nav from '../components/Nav';
+import { Link } from 'react-router-dom'
+
 const ProjectForm = () => {
   const [formData, setFormData] = useState({
     projectName: '',
@@ -54,9 +56,9 @@ const ProjectForm = () => {
   );
 
   return (
-    <div>
+    <div className='font-primary'>
       <Nav/>
-    <div className='mt-[100px]'>
+    <div className='mt-48'>
     <div className="max-w-xl mx-auto p-8 bg-white rounded-md shadow-md ">
       {currentStep === 1 && (
         <div>
@@ -161,9 +163,11 @@ const ProjectForm = () => {
           <button onClick={prevStep} className="mr-4 bg-gray-500 text-white px-4 py-2 rounded-md">
             Previous
           </button>
+          <Link to="/myprojects">
           <button onClick={submitForm} className="bg-green-500 text-white px-4 py-2 rounded-md">
             Submit
           </button>
+          </Link> 
         </div>
       )}
     </div>
