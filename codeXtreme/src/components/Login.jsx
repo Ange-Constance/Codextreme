@@ -1,8 +1,9 @@
-
+import Logo from "../assets/Finvest-White.png"
+import Image from "../assets/main_pic.svg"
 const Login = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center">
-    <form className="w-full max-w-md p-6 bg-white rounded-md shadow-md">
+    <div className="min-h-screen flex items-center w-full  bg-primary ">
+    <form className="w-full max-w-md p-6 bg-white rounded-md shadow-md ml-16">
       <h2 className="text-2xl font-bold mb-6">Log In</h2>
 
       <div className="mb-4">
@@ -12,7 +13,7 @@ const Login = () => {
         <input
           type="email"
           id="email"
-          className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring focus:border-blue-300"
+          className="w-full px-3 py-2 bg-gray-50 rounded-md focus:outline-none focus:ring focus:border-blue-100 focus:bg-white"
           placeholder="Enter your email"
         />
       </div>
@@ -24,18 +25,22 @@ const Login = () => {
         <input
           type="password"
           id="password"
-          className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring focus:border-blue-300"
+          className="w-full px-3 py-2 bg-gray-50 rounded-md focus:outline-none focus:ring focus:border-blue-100 focus:bg-white"
           placeholder="Enter your password"
         />
       </div>
 
       <button
         type="submit"
-        className="w-full bg-blue-500 text-white p-2 rounded-md hover:bg-blue-600 focus:outline-none focus:ring focus:border-blue-300"
+        className="w-1/2 bg-primary ml-20 mt-4 items-center text-white t p-2 rounded-[20px] hover:bg-secondary focus:outline-none focus:ring focus:border-blue-300"
       >
        Log In 
       </button>
     </form>
+    <div className="">
+        <img src={Logo} alt="logo" className="w-1/2 h-1/2 ml-[150px] mt-10 " />
+        <img src={Image} alt="vector" className="w-1/2 h-1/2 ml-[150px]  " />
+      </div>
   </div>
   );
 };
