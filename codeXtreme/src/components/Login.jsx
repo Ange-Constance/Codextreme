@@ -1,5 +1,7 @@
 import Logo from "../assets/Finvest-White.png"
 import Image from "../assets/main_pic.svg"
+import { Link } from "react-router-dom";
+
 const Login = () => {
   return (
     <div className="min-h-screen flex items-center w-full  bg-primary font-primary ">
@@ -30,12 +32,19 @@ const Login = () => {
         />
       </div>
 
+      <Link to="/community">
       <button
         type="submit"
         className="w-1/2 bg-primary ml-20 mt-4 items-center text-white t p-2 rounded-[20px] hover:bg-secondary focus:outline-none focus:ring focus:border-blue-300"
-      >
+      >        
        Log In 
       </button>
+      </Link>
+
+      <Link to="/singup">
+      <p className="text-sm text-primary text-center mt-4 mr-8 ">Sign Up</p>
+      </Link>
+      
     </form>
     <div className="">
         <img src={Logo} alt="logo" className="w-1/2 h-1/2 ml-[150px] mt-10 " />

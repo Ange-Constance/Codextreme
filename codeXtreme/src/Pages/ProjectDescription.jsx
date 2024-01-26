@@ -22,7 +22,7 @@ const ProjectDescription = () => {
     ]
 
   return (
-    <div>
+    <div className='mt-24 font-primary'>
      <Nav/>   
     <div className="flex items-center justify-center min-h-screen">
       <div className="max-w-4xl bg-white p-8 ">
@@ -45,9 +45,7 @@ const ProjectDescription = () => {
 
         <div className="flex items-center ml-[400px] float-right mt-[-80px] ">
               <span className="mr-4 font-bold text-gray-500">Investors: 50</span>
-              <button className="bg-primary text-white px-4 py-2 rounded">
-                Auction Your Project
-              </button>
+             
             </div>
 
           <p className='mt-4'>
