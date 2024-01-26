@@ -10,7 +10,7 @@ function LandingPage() {
     {
       id: 1,
       user: { name: 'John Doe', profilePicture: 'https://placekitten.com/30/30' },
-      projectImage: 'https://placekitten.com/150/150',
+      projectImage: 'https://bernardmarr.com/wp-content/uploads/2022/04/The-10-Biggest-Technology-Trends-That-Will-Transform-The-Next-Decade.jpg',
       title: 'Synthify',
       description: "Introducing Project Synthify – a revolutionary music synthesis platform that empowers musicians, producers, and sound enthusiasts to create rich, dynamic soundscapes effortlessly.", 
       date: 'Jan 25, 2024',
@@ -19,7 +19,7 @@ function LandingPage() {
     {
       id: 2,
       user: { name: 'John Doe', profilePicture: 'https://placekitten.com/30/30' },
-      projectImage: 'https://placekitten.com/150/150',
+      projectImage: 'https://physicsworld.com/wp-content/uploads/2023/12/atom-web-129757751-Shutterstock_Roman-Sigaev.jpg',
       title: 'Synthify',
       description: "Introducing Project Synthify – a revolutionary music synthesis platform that empowers musicians, producers, and sound enthusiasts to create rich, dynamic soundscapes effortlessly.",
       date: 'Jan 25, 2024',
@@ -28,7 +28,7 @@ function LandingPage() {
     {
       id: 3,
       user: { name: 'John Doe', profilePicture: 'https://placekitten.com/30/30' },
-      projectImage: 'https://placekitten.com/150/150',
+      projectImage: 'https://blog.fenstermaker.com/wp-content/uploads/2022/11/Agriculture-Drone-1200x628.jpg',
       title: 'Synthify',
       description: "Introducing Project Synthify – a revolutionary music synthesis platform that empowers musicians, producers, and sound enthusiasts to create rich, dynamic soundscapes effortlessly.", 
       date: 'Jan 25, 2024',
@@ -37,7 +37,7 @@ function LandingPage() {
     {
       id: 4,
       user: { name: 'John Doe', profilePicture: 'https://placekitten.com/30/30' },
-      projectImage: 'https://placekitten.com/150/150',
+      projectImage: 'https://img-c.udemycdn.com/course/750x422/40465_22b8_7.jpg',
       title: 'Synthify',
       description: "Introducing Project Synthify – a revolutionary music synthesis platform that empowers musicians, producers, and sound enthusiasts to create rich, dynamic soundscapes effortlessly.", 
       date: 'Jan 25, 2024',

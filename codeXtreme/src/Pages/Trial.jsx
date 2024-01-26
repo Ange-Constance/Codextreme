@@ -11,21 +11,12 @@ const Trial = () => {
       <div className="bg-white border-green-500 border p-10 rounded-lg flex justify-center ">
         <div className="w-20 h-20 bg-white border-green-500 border rounded-full mr-8"></div>
         <div>
-          <h1 className="text-2xl text-center font-bold mb-4">Our Community</h1>
-          <p className="text-gray-600">
-            Full project description goes here. Provide all the details you need.
-            This description can be very long and can span multiple lines.
-            Full project description goes here. Provide all the details you need.
-            This description can be very long and can span multiple lines.
-            Full project description goes here. Provide all the details you need.
-            This description can be very long and can span multiple lines.
-            Full project description goes here. Provide all the details you need.
-            This description can be very long and can span multiple lines.
-            Full project description goes here. Provide all the details you need.
-            This description can be very long and can span multiple lines.
+          <h1 className="text-6xl text-gray-600 font-bold mt-8">A Launch Pad for Student Projects</h1>
+        <p className="text-gray-400 text-lg mt-6">
+         Get Inspired, Support Students Project with rating,comments,opinion and be a part of our ideal community.
           </p>
-          <button className="bg-primary rounded-lg text-white font-bold text-sm p-4 mt-6 ml-[140px] ">
-            Join our Community
+          <button className="bg-primary rounded-lg text-white font-bold text-sm p-4 mt-6  ">
+            Join as Member
           </button>
         </div>
         <div className="w-20 h-20 bg-white border-green-500 border rounded-full ml-8"></div>
