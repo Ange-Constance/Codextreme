@@ -2,6 +2,7 @@ import Navbar from "../components/Navbar"
 import Image from "../assets/main_pic.svg"
 import Discovery from "../Components/Discovery"
 import ProjectCard from "../Components/ProjectCard"
+import { Link } from "react-router-dom";
 function LandingPage() {
 
   const projects = [
@@ -55,10 +56,14 @@ function LandingPage() {
           Finvest connects students with innovative ideas with investors and other innnovative students to kickstart their startups. </p>
         <div className="mt-4 flex space-x-6 mt-8">
           <button className="bg-primary text-white px-4 py-3 rounded-md font-bold">
+            <Link to="/signin">
             Join as Investor
+            </Link>
           </button>
           <button className="border border-black text-black px-4 py-3 rounded-md font-bold">
-            Sign In
+            <Link to="/signin">
+            Join as Student
+            </Link>
           </button>
         </div>
       </div>
