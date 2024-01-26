@@ -47,7 +47,7 @@ function CommunityPage() {
   return (
     <div>
       <Nav />
-    <div className="flex ml-40 mr-40">    
+    <div className="flex ml-40 mr-40 mt-32">    
      
     <div className="justify-center h-screen items-center flex-initial w-4/5">
     {projects.map((project) => (

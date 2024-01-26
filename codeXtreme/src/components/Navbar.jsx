@@ -16,9 +16,7 @@ const Navbar = () => {
         <Link to="/ourstory">
           <li><a href="#" className="text-black">Our Story</a></li>
         </Link>
-        <Link to="/community">
-          <li><a href="#" className="text-black">Community</a></li>
-          </Link>
+        
 
           <Link to="/projects">
           <li><a href="#" className="text-black">Projects</a></li>

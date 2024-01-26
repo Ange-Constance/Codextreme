@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import Logo from '../assets/logo.png';
+import Logo from '../assets/Finvest_Logo.png';
 
 const Nav = () => {
   const user = {
@@ -15,14 +15,12 @@ const Nav = () => {
   };
 
   return (
-    <nav className="bg-white p-4 flex items-center justify-between">
+    <nav className="bg-white p-4 flex items-center justify-between fixed w-full top-0 z-10">
       {/* Left side - Logo and Name */}
       <div className="flex items-center">
-        <img src={Logo} alt="Logo" className="w-[80px] h-[70px] ml-[-5px] mb-8" />
-        <span className="text-gray-600 text-[25px] font-bold ml-4 mb-8">Finvest</span>
+      <img src={Logo} alt="Logo" className="w-[170px] h-[40px] ml-12 mb-8" />
       </div>
 
-    
       {/* Right side - Navigation and Profile */}
       <div className="flex items-center space-x-4">
         {/* Search Bar */}
@@ -73,7 +71,7 @@ const Nav = () => {
                     }}
                   >
                     <Link to="/">
-                    Logout
+                      Logout
                     </Link>
                   </button>
                 </li>
