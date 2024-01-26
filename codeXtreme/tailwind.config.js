@@ -7,6 +7,7 @@ export default {
         primary: '#11d171',
         secondary: '#1aed89',
         tertiary: '#1e1e1e',
+        darkBlue: '#13231A'
       },
       visibility: {
         visible: 'visible',

@@ -3,6 +3,7 @@ import Image from "../assets/main_pic.svg"
 import Discovery from "../Components/Discovery"
 import ProjectCard from "../Components/ProjectCard"
 import { Link } from "react-router-dom";
+import Trial from "./Trial";
 function LandingPage() {
 
   const projects = [
@@ -74,6 +75,10 @@ function LandingPage() {
         {/* Add your beautiful graphics or icons here */}
       </div>
     </div>
+    <div className="">
+   <Trial/>
+   </div>
+   
     <Discovery/>
     <div className="justify-center h-screen items-center flex-initial w-2/4 ml-16 mt-[120px]">
     {projects.map((project) => (
