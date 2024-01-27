@@ -6,7 +6,7 @@ import {
 import CommunityPage from "./Pages/CommunityPage"
 import LandingPage from "./Pages/LandingPage"
 import Login from "./Pages/Login"
-import SignUp from "./components/SignUp"
+import SignUp from "./Pages/SignUp"
 import OurStoryPage from "./Pages/OurStoryPage"
 import ProjectsPage from "./Pages/ProjectsPage"
 import PreferencesPage from "./Pages/PreferencesPage"
