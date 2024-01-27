@@ -5,7 +5,7 @@ import {
  } from "react-router-dom"
 import CommunityPage from "./Pages/CommunityPage"
 import LandingPage from "./Pages/LandingPage"
-import Login from "./components/Login"
+import Login from "./Pages/Login"
 import SignUp from "./components/SignUp"
 import OurStoryPage from "./Pages/OurStoryPage"
 import ProjectsPage from "./Pages/ProjectsPage"
