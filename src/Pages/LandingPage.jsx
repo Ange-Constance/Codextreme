@@ -54,8 +54,8 @@ function LandingPage() {
       },
       {
         id: 6,
-        user: { name: 'David White', profilePicture: 'https://placekitten.com/30/36https://images.unsplash.com/photo-1474978528675-4a50a4508dc3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjR8fHByb2ZpbGV8ZW58MHx8MHx8fDA%3D' },
-        projectImage: 'https://images.unsplash.com/photo-1464226184884-fa280b87c399?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGFncmljdWx0dXJlfGVufDB8MHwwfHx8MA%3D%3D',
+        user: { name: 'David White', profilePicture: 'https://images.unsplash.com/photo-1595085610896-fb31cfd5d4b7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDZ8fHByb2ZpbGV8ZW58MHwwfDB8fHww' },
+        projectImage: 'https://unsplash.com/photos/closeup-photography-of-woman-smiling-mEZ3PoFGs_k',
         title: 'CodeCraft',
         description: "Explore Project CodeCraft – an online coding community that fosters collaboration, learning, and innovation among programmers, developers, and coding enthusiasts.",
         date: 'Mar 10, 2024',
