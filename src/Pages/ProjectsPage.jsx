@@ -1,7 +1,7 @@
 // src/components/BestProjectsPage.js
 import Image from "../assets/vr-lenses.png";
 import React, { useState } from 'react';
-import Nav from "../components/Nav";
+import Nav from "./Nav";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTrophy } from '@fortawesome/free-solid-svg-icons';
 import { Link } from "react-router-dom";

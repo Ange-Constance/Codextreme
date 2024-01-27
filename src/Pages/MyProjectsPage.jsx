@@ -1,6 +1,6 @@
 import Image from "../assets/vr-lenses.png";
 import React, { useState } from 'react';
-import Nav from "../components/Nav";
+import Nav from "./Nav";
 import { FaEdit, FaTrash } from 'react-icons/fa';
 import { Link } from "react-router-dom";
 

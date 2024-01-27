@@ -1,6 +1,6 @@
-import ProjectCard from "../Components/ProjectCard"
-import TrendingCard from "../components/TrendingCard"
-import Nav from "../components/Nav";
+import ProjectCard from "./ProjectCard"
+import TrendingCard from "./TrendingCard"
+import Nav from "./Nav";
 function CommunityPage() {
 
   const projects = [

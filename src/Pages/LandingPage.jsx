@@ -1,11 +1,11 @@
-import Navbar from "../components/Navbar"
+import Navbar from "./Navbar"
 import Image from "../assets/main_pic.svg"
-import Discovery from "../Components/Discovery"
-import ProjectCard from "../Components/ProjectCard"
+import Discovery from "./Discovery"
+import ProjectCard from "./ProjectCard"
 import { Link } from "react-router-dom";
 import Trial from "./Trial";
 function LandingPage() {
-
+  
   const projects = [
     {
         id: 1,
