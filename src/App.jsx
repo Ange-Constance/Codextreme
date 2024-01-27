@@ -5,7 +5,7 @@ import {
  } from "react-router-dom"
 import CommunityPage from "./Pages/CommunityPage"
 import LandingPage from "./Pages/LandingPage"
-import SingIn from "./components/Login"
+import Login from "./components/Login"
 import SignUp from "./components/SignUp"
 import OurStoryPage from "./Pages/OurStoryPage"
 import ProjectsPage from "./Pages/ProjectsPage"
@@ -25,7 +25,7 @@ const App = () => {
           <Route path="/community" element={<CommunityPage />} />
           <Route path="/ourstory" element={<OurStoryPage />} />
           <Route path="/projects" element={<ProjectsPage />} />
-          <Route path="/signin" element={<SingIn />} />
+          <Route path="/signin" element={<Login />} />
           <Route path="/singup" element={<SignUp />} />
           <Route path="/preferences" element={<PreferencesPage />} />
           <Route path="/projectpage" element={<ProjectsPage />} />
